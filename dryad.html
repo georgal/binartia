@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+			
+		<link rel="stylesheet" href="topics.css"/>
+
+	</head>
+	
+	<script src="dark.js"></script>
+	
+	<body>
+	
+		<div class="container">
+
+			<header>
+			<div id="head">
+			   <h1>IT topics</h1>
+			</div>
+			</header>
+			
+			<ul id='menu'>
+			  <li><a href="index.html">Binartia</a></li>
+			  <li><a href="dryad.html">IT topics</a></li>
+			  <li><a href="projects.html">Projects</a></li>
+			  <li><a href="contributors.html">Contributors</a></li>
+			  <li><a href="about.html">About</a></li>
+			  <li id="dif" style="float:right"><a class="active" href="contact.html" >Contact</a></li>
+			  <li id="dif" style="float:right"><a class="active" onclick="write_inside()">Grey mode</a></li>
+			</ul>
+		  
+			<nav id="navleft">
+			  <ul>
+				<li><a href="dryad.html">Dryad Analytics</a></li>
+				<li><a href="cities.html">Smart Cities</a></li>
+				<li><a href="affair.html">The Athens Affair</a></li>
+			  </ul>
+			</nav>
+
+			<aside id="navright" >
+			  <ul>
+				<li><a href="index.html">Return</a></li>
+			  </ul>
+			</aside>
+
+
+		<article>
+			  <h1>Dryad: Distributed Data-Parallel Programs from Sequential Building Blocks</h1>
+			  <p>Dryad is a general-purpose distributed execution engine for coarse-grain data-parallel applications. A Dryad application combines computational "vertices" with communication "channels" to form a dataflow graph. Dryad runs the application by executing the vertices of this graph on a set of available computers, communicating as appropriate through flies, TCP pipes, and shared-memory FIFOs.</p>
+			  <p>The vertices provided by the application developer are quite simple and are usually written as sequential programs with no thread creation or locking. Concurrency arises from Dryad scheduling vertices to run simultaneously on multiple computers, or on multiple CPU cores within a computer.  <img src="images/dryad-3.png" alt="it1323" width="514" height="297" align="left"> The application can discover the size and placement of data at run time, and modify the graph as the computation progresses to make efficient use of the available resources. Dryad is designed to scale from powerful multi-core single computers, through small clusters of computers, to data centers with thousands of computers. The Dryad execution engine handles all the difficult problems of creating a large distributed, concurrent application: scheduling the use of computers and their CPUs, recovering from communication or computer failures, and transporting data between vertices.</p>
+			  <p>Dryad is Microsoft’s answer to the MapReduce paradigm, albeit at a (slightly) lower level with greater flexibility. Like MapReduce, Dryad allows developers to think about what to do with the data, and Dryad itself takes care of distribution, fault-tolerance, stragglers etc. Unlike MapReduce, Dryad enables creating extensive data flow models using DAGs or directed acyclic graphs. Dryad also adds increased flexibility for communication between computation nodes in a DAG via disk, TCP pipes, and shared memory queues, as opposed to only disk-based communication promoted by MapReduce. This could possibly allow fully in-memory data flow models for faster data mining and iterative jobs.</p>
+		</article>
+
+		<footer>
+		Copyright &copy; Binartia 2017<br>
+		<a href="index.html">Home</a>
+		</footer>
+
+		</div>
+
+	</body>
+</html>

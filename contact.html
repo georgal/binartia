@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title> Φόρμα </title>
+		
+			<link rel="stylesheet" href="contact.css"/>
+			
+	</head>
+	
+	<script src="dark.js"></script>
+	
+	<body id="dynamic">
+	
+	<header>
+			<a href="index.html">
+			   <img src="images/logo2.png"style="max-width:160px"class="img-responsive">
+			 </a>
+	</header>
+
+	<ul id='menu'>
+	  <li><a href="index.html">Binartia</a></li>
+	  <li><a href="dryad.html">IT topics</a></li>
+	  <li><a href="projects.html">Projects</a></li>
+	  <li><a href="contributors.html">Contributors</a></li>
+	  <li><a href="about.html">About</a></li>
+	  <li id="dif" style="float:right"><a class="active" >Contact</a></li>
+	  <li id="dif" style="float:right"><a class="active" onclick="write_inside()">Grey mode</a></li>
+	</ul>
+
+		<h1 id="hid" style="display: none"> Φόρμα επικοινωνίας </h1>
+		<br>
+		<form id = "clientForm"  name = "clientForm" method = "get" action = "" />
+			
+			<div class="top" style='margin-left:40px; margin-right:100px;'>
+				<fieldset id="one">
+					<legend id= "legone"><b>Στοιχεία</b></legend>
+						<table id= "table1" style= 'cellpadding="0"; border-spacing: 10px;'>
+						<tr> <td><label for="clientName">Όνομα*</label></td> 
+							<td> <input type = "text" name ="clientName" id="clientName" size = "20" required/></td>
+						</tr>
+						<!--<tr> <td> <label for="clientSurName">Επώνυμο*</label> </td> 
+							<td> <input type = "text" name ="clientSurName" size = "20" required/></td>
+						</tr>
+						<tr> <td> <label for="clientPhone">Τηλέφωνο*</label> </td> 
+							<td> <input type = "tel" name ="clientPhone" size = "20" required/></td>
+						</tr>
+						<tr> <td> <label for="clientAddress">Διεύθυνση*</label> </td> 
+							<td> <input type = "text" name ="clientAddress" size = "20" required/></td>
+						</tr>
+						<tr> <td> <label for="clientPostCo">ΤΚ*</label> </td> 
+							<td> <input type="text" pattern="[0-9]{5}" name ="clientPostCo" size = "20" required/></td>
+						</tr>-->
+						<tr> <td> <label for="clientMail">Email</label> </td> 
+							<td> <input type = "mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name= "clientMail" size = "20" /></td>
+						</tr>
+						</table>
+						<hr />
+						<table id= "table2" style= 'margin-left: 10px;'>
+						<tr> <td> <label for="clientMail">Website</label> </td>
+					    </tr>
+					    <tr><td> <input type = "url" name ="clientSite" size = "30" /></td>
+					    </tr>
+						</table>
+				</fieldset>			
+			</div>	
+			
+		<br/>
+		
+			<div class="bottom" style='margin-left:40px; margin-right:110px;'>
+					<div class="comment">
+					<b>Μήνυμα</b><br>
+					<textarea name="comments" placeholder="Εδώ γράφετε!" id="textarea" style= 'width: 500px; height: 150px;'></textarea>
+					</div>	
+			</div>
+			
+			<br>	
+			
+			<div class="butt" style= 'margin-left:40px;'>
+				<button type="submit"><b>Υποβολή</b></button>
+				<button type="reset"><b>Επαναφορά</b></button>
+			</div>
+			
+			</form>
+		<br>
+		<footer>
+		Copyright &copy; Binartia 2017<br>
+		<a href="index.html">Home</a>
+		</footer>
+		
+		</body>
+		
+	</html>	
