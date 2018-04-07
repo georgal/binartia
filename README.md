@@ -1,3 +1,3 @@
 # binartia
 the art of binary
-binaria.co
+www.binartia.co
